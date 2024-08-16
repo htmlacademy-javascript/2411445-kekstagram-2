@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Dima Berlinskiy](https://up.htmlacademy.ru/javascript-individual/2/user/2411445).
-* Наставник: `Олег Глущенко`.
+* Наставник: [Олег Глущенко](https://htmlacademy.ru/profile/id305355).
 
 ---
 
