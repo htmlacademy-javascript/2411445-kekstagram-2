@@ -1,68 +1,17 @@
-function checkStringLength(str, maxLength) {
-  return str.length <= maxLength;
-}
-
-function checkPalindrome(str) {
-  const normalizedStr = str.replaceAll(" ", "").toLowerCase();
-
-  for (let i = 0; i < normalizedStr.length / 2; i++) {
-    const leftLetter = normalizedStr[i];
-    const rightLetter = normalizedStr[normalizedStr.length - 1 - i];
-
-    if (leftLetter !== rightLetter) {
-      return false;
-    }
-  }
-
+//5.16. Функции возвращаются
+function checkMeetings(
+  beginningWorkingDay,
+  endWorkingDay,
+  beginningMeeting,
+  durationMeeting
+) {
   return true;
 }
 
-function convertStringToNumber(str) {
-  let result = "";
+checkMeetings("08:00", "17:30", "14:00", 90); // true
+checkMeetings("8:0", "10:0", "8:0", 120); // true
+checkMeetings("08:00", "14:30", "14:00", 90); // false
+checkMeetings("14:00", "17:30", "08:0", 90); // false
+checkMeetings("8:00", "17:30", "08:00", 900); // false
 
-  if (typeof str === "number") {
-    str = str.toString();
-  }
-
-  for (let i = 0; i < str.length; i++) {
-    const isLetterNaN = Number.isNaN(parseInt(str[i], 10));
-
-    if (!isLetterNaN) {
-      result += str[i];
-    }
-  }
-
-  return parseInt(result, 10);
-}
-
-// Строка короче 20 символов
-checkStringLength("проверяемая строка", 20); // true
-// Длина строки ровно 18 символов
-checkStringLength("проверяемая строка", 18); // true
-// Строка длиннее 10 символов
-checkStringLength("проверяемая строка", 10); // false
-
-// ---------------------------------
-
-// Строка является палиндромом
-checkPalindrome("топот"); // true
-// Строка является палиндромом
-checkPalindrome("воов"); // true
-// Несмотря на разный регистр, тоже палиндром
-checkPalindrome("ДовОд"); // true
-// Это не палиндром
-checkPalindrome("Кекс"); // false
-// Это палиндром
-checkPalindrome("Лёша на полке клопа нашёл "); // true
-
-// ---------------------------------
-
-convertStringToNumber("2023 год"); // 2023
-convertStringToNumber("ECMAScript 2022"); // 2022
-convertStringToNumber("1 кефир, 0.5 батона"); // 105
-convertStringToNumber("агент 007"); // 7
-convertStringToNumber("а я томат"); // NaN
-
-convertStringToNumber(2023); // 2023
-convertStringToNumber(-1); // 1
-convertStringToNumber(1.5); // 15
+split();
