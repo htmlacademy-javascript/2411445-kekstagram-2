@@ -4,27 +4,27 @@ import {
   PHOTOS_COUNT_MAX,
   NAMES,
   COMMENT_MESSAGES,
-} from "./data";
+} from './data';
 
-export function generateAvatar() {
+function generateAvatar() {
   const avatar = `img/avatar-${
     Math.floor(Math.random() * AVATAR_COUNT_MAX) + 1
   }.svg`;
   return avatar;
 }
 
-export function generateMessage() {
+function generateMessage() {
   const message =
     COMMENT_MESSAGES[Math.floor(Math.random() * COMMENT_MESSAGES.length)];
   return message;
 }
 
-export function generateName() {
+function generateName() {
   const name = NAMES[Math.floor(Math.random() * NAMES.length)];
   return name;
 }
 
-export function generateComments() {
+function generateComments() {
   const comments = [];
 
   const commentCount = Math.floor(Math.random() * COMMENT_COUNT_QUANTIFIER);
@@ -57,6 +57,8 @@ export function generatePhotos() {
 
     photos.push(photo);
   }
-
+console.log(photos);
   return photos;
 }
+
+console.log()
