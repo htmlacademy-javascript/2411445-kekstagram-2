@@ -1,7 +1,2 @@
-import {
-  generatePhotos,
-  generateAvatar,
-  generateMessage,
-  generateName,
-  generateComments,
-} from "./comments";
+// import { generatePhotos } from './comments';
+import './zoom.js';
