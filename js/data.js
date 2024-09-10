@@ -1,4 +1,4 @@
-//Загрузка нового изображения на сайт и заполнение информации о нём
+
 export const COMMENT_COUNT_QUANTIFIER = 31;
 export const AVATAR_COUNT_MAX = 6;
 export const PHOTOS_COUNT_MAX = 25;
