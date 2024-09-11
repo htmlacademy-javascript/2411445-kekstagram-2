@@ -43,6 +43,7 @@ function generateComments() {
   return comments;
 }
 
+
 export function generatePhotos() {
   const photos = [];
 
@@ -53,12 +54,11 @@ export function generatePhotos() {
       description: `Описание фотографии ${i}`,
       likes: Math.floor(Math.random() * 186) + 15,
       comments: generateComments(),
+      avatar: generateAvatar()
     };
 
     photos.push(photo);
   }
 console.log(photos);
   return photos;
-}
-
-console.log()
+};

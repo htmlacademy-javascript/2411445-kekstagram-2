@@ -1,2 +1,4 @@
-// import { generatePhotos } from './comments';
 import './zoom.js';
+import './big-picture.js'
+
+
